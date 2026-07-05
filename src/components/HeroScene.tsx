@@ -5,19 +5,14 @@ import { ContactShadows, Environment, Lightformer, MeshReflectorMaterial } from 
 import { heroProgress } from '../lib/scroll'
 import MacBook from './MacBook'
 
-/** Camera drifts up and back as the lid closes, with a light pointer
- *  parallax while the user has not scrolled yet. */
+/** Camera drifts up and back as the lid closes. Movement is driven only by
+ *  scroll progress, never by the pointer, so the laptop holds still on
+ *  hover. */
 function CameraRig({ reduced }: { reduced: boolean }) {
   const { camera } = useThree()
-  useFrame((state) => {
+  useFrame(() => {
     const p = reduced ? 0 : heroProgress.value
-    const px = reduced ? 0 : state.pointer.x
-    const py = reduced ? 0 : state.pointer.y
-    const target = new THREE.Vector3(
-      px * 1.1 * (1 - p),
-      3.6 + p * 4.2 - py * 0.5 * (1 - p),
-      27 - p * 3.2,
-    )
+    const target = new THREE.Vector3(0, 3.6 + p * 4.2, 27 - p * 3.2)
     camera.position.lerp(target, 0.07)
     camera.lookAt(0, 1.1 - p * 0.9, 0)
   })

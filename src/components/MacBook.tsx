@@ -98,7 +98,7 @@ export default function MacBook({ reduced }: MacBookProps) {
           <mesh material={materials.aluminium} geometry={nodes['Cube008'].geometry} />
           <mesh material={materials['matte.001']} geometry={nodes['Cube008_1'].geometry} />
           <mesh material={materials['screen.001']} geometry={nodes['Cube008_2'].geometry} />
-          <mesh geometry={nodes['Cube008_2'].geometry} position={[0, 0, 0.0015]}>
+          <mesh geometry={nodes['Cube008_2'].geometry} position={[0, 0, 0.02]}>
             <meshBasicMaterial
               ref={screenMaterial}
               map={cliTexture}
