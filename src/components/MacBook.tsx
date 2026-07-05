@@ -76,7 +76,7 @@ export default function MacBook({ reduced }: MacBookProps) {
       <pointLight
         ref={screenGlow}
         position={[0, 2.6, 1.8]}
-        color="#d97757"
+        color="#059669"
         intensity={1.4}
         distance={9}
         decay={2}
