@@ -51,7 +51,7 @@ interface PixelWordProps {
   className?: string
 }
 
-export default function PixelWord({ word, color = '#d97757', className }: PixelWordProps) {
+export default function PixelWord({ word, color = '#059669', className }: PixelWordProps) {
   const runs = runsForWord(word)
   const width = word.length * (LETTER_W + LETTER_GAP) - LETTER_GAP + ECHO
   const height = 5 + ECHO

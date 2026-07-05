@@ -70,7 +70,7 @@ export default function HeroScene({ reduced }: HeroSceneProps) {
         color="#bff2dd"
       />
       {/* Gold rim from behind right */}
-      <pointLight position={[7, 5, -7]} intensity={40} color="#d4a853" />
+      <pointLight position={[7, 5, -7]} intensity={40} color="#059669" />
       <Suspense fallback={null}>
         <MacBook reduced={reduced} />
         <Table />
@@ -94,7 +94,7 @@ export default function HeroScene({ reduced }: HeroSceneProps) {
             position={[9, 4, -3]}
             rotation={[0, -Math.PI / 2, 0]}
             scale={[7, 3, 1]}
-            color="#d4a853"
+            color="#059669"
           />
         </Environment>
         <ContactShadows position={[0, -0.21, 0]} opacity={0.65} scale={26} blur={2.1} far={4} />

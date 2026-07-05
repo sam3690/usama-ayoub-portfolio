@@ -15,14 +15,17 @@ export default function Cli() {
         <span className="h-[6px] w-[6px] rounded-full bg-[#58c33f]" />
       </div>
 
-      <div className="cli-stage-1 mb-3 w-fit rounded-[4px] border border-[#d97757] px-2 py-[3px] text-[#faf9f5]">
-        <span className="mr-1 text-[#d97757]">✻</span> Welcome to the{' '}
-        <b>Usama Ayoub</b> research preview!
+      <div className="cli-stage-1 mb-3 w-fit rounded-[4px] border border-[#059669] px-2 py-[3px] text-[#faf9f5]">
+        <span className="mr-1 text-[#059669]">✻</span> Welcome to the{' '}
+        <b>Usama Ayoub!</b> research preview!
       </div>
 
       <div className="cli-stage-2">
         <PixelWord word="USAMA" className="mb-[6px] w-[172px]" />
         <PixelWord word="AYOUB" className="w-[172px]" />
+        <br />
+        <p>AI Automations & AI Systems Engineer</p>
+        <p>Software Engineer </p>
       </div>
 
       <div className="cli-stage-3 mt-auto text-[#b3c8f0]">
