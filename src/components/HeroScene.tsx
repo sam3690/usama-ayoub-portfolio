@@ -53,9 +53,10 @@ export default function HeroScene({ reduced }: HeroSceneProps) {
   return (
     <Canvas
       dpr={[1, 1.75]}
-      camera={{ position: [0, 3.6, 27], fov: 32 }}
+      camera={{ position: [0, 3.35, 15], fov: 29 }}
       gl={{ antialias: true, powerPreference: 'high-performance' }}
       className="!absolute inset-0"
+      
     >
       <color attach="background" args={['#0b0d10']} />
       <fog attach="fog" args={['#0b0d10', 20, 42]} />

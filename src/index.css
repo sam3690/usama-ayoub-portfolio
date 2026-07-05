@@ -1,6 +1,7 @@
 @import '@fontsource-variable/inter';
 @import '@fontsource-variable/playfair-display';
 @import '@fontsource-variable/jetbrains-mono';
+@import '@fontsource-variable/antonio';
 @import 'tailwindcss';
 
 @theme {
@@ -22,6 +23,13 @@
   --font-serif: 'Playfair Display Variable', Georgia, serif;
   --font-sans: 'Inter Variable', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
+  --font-heading: 'Antonio Variable', 'Antonio', sans-serif;
+}
+
+/* Big titles only: hero name and each section's headline. Sub-titles, card
+   titles, and the skills wheel keep the serif family. */
+.font-heading {
+  font-family: var(--font-heading);
 }
 
 html {
@@ -44,7 +52,7 @@ html.lenis body {
 body {
   background-color: var(--color-brand-black);
   color: var(--color-brand-light);
-  font-family: var(--font-sans);
+  font-family: var(--font-heading);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: clip;
@@ -94,7 +102,7 @@ body {
 .line-mask {
   display: block;
   overflow: hidden;
-  padding-bottom: 0.12em;
+  padding-bottom: 2.12em;
   margin-bottom: -0.12em;
 }
 

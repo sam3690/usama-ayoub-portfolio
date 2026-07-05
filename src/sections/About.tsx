@@ -58,7 +58,7 @@ export default function About({ reduced }: AboutProps) {
     <section ref={section} id="about" className="relative mx-auto max-w-[1400px] px-6 py-28 md:px-14 md:py-40">
       <div className="grid grid-cols-1 gap-14 md:grid-cols-12 md:gap-8">
         <div className="md:col-span-7">
-          <h2 className="font-serif text-4xl font-semibold leading-[1.08] tracking-tight text-brand-white md:text-6xl">
+          <h2 className="font-heading text-4xl font-semibold leading-[1.08] tracking-tight text-brand-white md:text-6xl">
             <span className="about-line line-mask">
               <span className="line-inner block">Automation you can</span>
             </span>
@@ -73,7 +73,7 @@ export default function About({ reduced }: AboutProps) {
             production or it does not ship. I bring that bar to GTM agents, AI sales systems and
             the websites that sell them.
           </p>
-          <p className="about-body mt-6 font-serif text-xl italic text-gold md:text-2xl">
+          <p className="about-body mt-6 font-heading text-xl italic text-gold md:text-2xl">
             "Move fast and don't break things."
           </p>
 
@@ -81,7 +81,7 @@ export default function About({ reduced }: AboutProps) {
             {stats.map((s) => (
               <div key={s.value} className="about-stat border-t border-brand-border pt-4">
                 <dt className="sr-only">{s.label}</dt>
-                <dd className="font-serif text-3xl font-semibold text-brand-white md:text-4xl">
+                <dd className="font-heading text-3xl font-semibold text-brand-white md:text-4xl">
                   {s.value}
                 </dd>
                 <dd className="mt-2 text-sm leading-snug text-brand-muted">{s.label}</dd>
@@ -93,17 +93,17 @@ export default function About({ reduced }: AboutProps) {
         <div className="md:col-span-5 md:pl-8">
           <figure className="about-portrait relative mt-2 aspect-[4/5] overflow-hidden rounded-2xl border border-brand-border md:-mt-6">
             <div className="about-portrait-inner absolute -inset-y-[10%] inset-x-0">
-              {/* Drop portrait.jpg into /public to replace the fallback */}
+              {/* Drop portrait.png into /public to replace the fallback */}
               {!portraitMissing ? (
                 <img
-                  src="/portrait.jpg"
+                  src="/portrait.png"
                   alt="Portrait of Usama Ayoub"
                   className="h-full w-full object-cover"
                   onError={() => setPortraitMissing(true)}
                 />
               ) : (
                 <div className="atmosphere flex h-full w-full items-end justify-start p-8">
-                  <span className="font-serif text-8xl font-bold text-emerald-brand/60">U.</span>
+                  <span className="font-heading text-8xl font-bold text-emerald-brand/60">U.</span>
                 </div>
               )}
             </div>
@@ -111,7 +111,7 @@ export default function About({ reduced }: AboutProps) {
               className="pointer-events-none absolute inset-0"
               style={{ background: 'linear-gradient(to top, rgba(11,13,16,0.55), transparent 45%)' }}
             />
-            <figcaption className="absolute bottom-5 left-6 font-serif text-lg italic text-brand-white/90">
+            <figcaption className="absolute bottom-5 left-6 font-heading text-lg italic text-brand-white/90">
               Usama Ayoub
             </figcaption>
           </figure>

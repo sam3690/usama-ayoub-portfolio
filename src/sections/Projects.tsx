@@ -33,7 +33,7 @@ function Card({ p, active }: { p: Project; active: boolean }) {
       style={cardArt(p)}
     >
       <div className="absolute inset-0" style={gridPattern(p)} />
-      <div className="absolute left-6 top-6 font-mono text-[11px] uppercase tracking-[0.18em] text-brand-light/60">
+      <div className="absolute left-6 top-6 font-heading text-[11px] uppercase tracking-[0.18em] text-brand-light/60">
         {p.role}
       </div>
       <div
@@ -41,7 +41,7 @@ function Card({ p, active }: { p: Project; active: boolean }) {
         style={{ background: `${p.tint}40`, right: '-2rem', top: '30%' }}
       />
       <div className="absolute inset-x-6 bottom-6">
-        <h3 className="font-serif text-3xl font-semibold leading-tight text-brand-white">
+        <h3 className="font-heading text-3xl font-semibold leading-tight text-brand-white">
           {p.title}
         </h3>
       </div>
@@ -94,7 +94,7 @@ export default function Projects({ reduced }: ProjectsProps) {
   if (!fan) {
     return (
       <section id="work" className="mx-auto max-w-[1400px] px-6 py-28 md:px-14">
-        <h2 className="font-serif text-4xl font-semibold tracking-tight text-brand-white">
+        <h2 className="font-heading text-4xl font-semibold tracking-tight text-brand-white">
           Selected <span className="italic text-emerald-brand">systems.</span>
         </h2>
         <div className="mt-12 space-y-12">
@@ -104,7 +104,7 @@ export default function Projects({ reduced }: ProjectsProps) {
               <p className="mt-4 max-w-[46ch] text-sm leading-relaxed text-brand-light/75">
                 {p.description}
               </p>
-              <p className="mt-2 font-mono text-xs text-brand-muted">{p.stack.join(' / ')}</p>
+              <p className="mt-2 font-heading text-xs text-brand-muted">{p.stack.join(' / ')}</p>
             </div>
           ))}
         </div>
@@ -120,11 +120,11 @@ export default function Projects({ reduced }: ProjectsProps) {
     >
       <div className="sticky top-0 h-[100dvh] overflow-hidden">
         <div className="absolute left-14 top-1/2 z-10 w-[24rem] -translate-y-1/2">
-          <h2 className="font-serif text-5xl font-semibold leading-tight tracking-tight text-brand-white">
+          <h2 className="font-heading text-5xl font-semibold leading-tight tracking-tight text-brand-white">
             Selected <span className="italic text-emerald-brand">systems.</span>
           </h2>
           <div key={active} className="meta-swap mt-10">
-            <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-gold">
+            <p className="font-heading text-[11px] uppercase tracking-[0.18em] text-gold">
               {activeProject.role}
             </p>
             <p className="mt-4 max-w-[40ch] leading-relaxed text-brand-light/80">
@@ -134,7 +134,7 @@ export default function Projects({ reduced }: ProjectsProps) {
               {activeProject.stack.map((t) => (
                 <li
                   key={t}
-                  className="rounded-full border border-brand-border px-3 py-1 font-mono text-xs text-brand-light/70"
+                  className="rounded-full border border-brand-border px-3 py-1 font-heading text-xs text-brand-light/70"
                 >
                   {t}
                 </li>

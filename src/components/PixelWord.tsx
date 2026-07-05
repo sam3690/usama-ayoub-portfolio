@@ -11,10 +11,10 @@ const GLYPHS: Record<string, string[]> = {
   B: ['XXXX.', 'X...X', 'XXXX.', 'X...X', 'XXXX.'],
 }
 
-const LETTER_W = 5
-const LETTER_GAP = 1.4
-const BRICK_GAP = 0.18
-const ECHO = 0.5
+export const LETTER_W = 5
+export const LETTER_GAP = 1.4
+export const BRICK_GAP = 0.18
+export const ECHO = 0.5
 
 interface Run {
   x: number
@@ -22,7 +22,7 @@ interface Run {
   len: number
 }
 
-function runsForWord(word: string): Run[] {
+export function runsForWord(word: string): Run[] {
   const runs: Run[] = []
   ;[...word].forEach((ch, li) => {
     const glyph = GLYPHS[ch]

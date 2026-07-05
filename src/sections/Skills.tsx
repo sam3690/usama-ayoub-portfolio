@@ -52,14 +52,14 @@ export default function Skills({ reduced }: SkillsProps) {
   if (!whirl) {
     return (
       <section id="skills" className="mx-auto max-w-[1400px] px-6 py-28 md:px-14">
-        <h2 className="font-serif text-4xl font-semibold tracking-tight text-brand-white">
+        <h2 className="font-heading text-4xl font-semibold tracking-tight text-brand-white">
           Tools I ship <span className="italic text-emerald-brand">with.</span>
         </h2>
         <ul className="mt-10 flex flex-wrap gap-3">
           {skills.map((s) => (
             <li
               key={s.name}
-              className="rounded-full border border-brand-border px-4 py-2 text-sm text-brand-light/85"
+              className="rounded-full border border-brand-border px-4 py-2 font-sans text-sm text-brand-light/85"
             >
               {s.name}
             </li>
@@ -74,14 +74,14 @@ export default function Skills({ reduced }: SkillsProps) {
       <div className="sticky top-0 flex h-[100dvh] items-center overflow-hidden">
         <div className="relative z-10 mx-auto w-full max-w-[1400px] px-6 md:px-14">
           <div className="max-w-sm">
-            <h2 className="font-serif text-4xl font-semibold leading-tight tracking-tight text-brand-white md:text-6xl">
+            <h2 className="font-heading text-4xl font-semibold leading-tight tracking-tight text-brand-white md:text-6xl">
               Tools I ship <span className="italic text-emerald-brand">with.</span>
             </h2>
             <p className="mt-6 text-brand-light/70">
               Every system is only as good as the stack under it. Mine is chosen for one thing:
               surviving production.
             </p>
-            <p key={active} className="meta-swap mt-10 font-mono text-sm text-gold">
+            <p key={active} className="meta-swap mt-10 font-heading text-sm text-gold">
               {skills[active]?.cat}
             </p>
           </div>

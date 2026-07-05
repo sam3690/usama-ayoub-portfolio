@@ -51,12 +51,12 @@ export default function Hero({ reduced }: HeroProps) {
         <HeroScene reduced={reduced} />
 
         <div className="hero-intro pointer-events-none absolute bottom-10 left-6 md:bottom-14 md:left-14">
-          <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-brand-muted">
+          {/* <p className="font-heading text-[11px] uppercase tracking-[0.22em] text-brand-muted">
             AI automation engineer
           </p>
-          <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.22em] text-brand-muted">
+          <p className="mt-1 font-heading text-[11px] uppercase tracking-[0.22em] text-brand-muted">
             Web designer
-          </p>
+          </p> */}
         </div>
 
         <div
@@ -66,7 +66,7 @@ export default function Hero({ reduced }: HeroProps) {
               : 'hero-name pointer-events-none absolute inset-0 flex flex-col items-center justify-center'
           }
         >
-          <h1 className="text-center font-serif font-bold leading-[0.95] tracking-tight text-brand-white">
+          <h1 className="text-center font-heading font-bold leading-[0.95] tracking-tight text-brand-white">
             <span className="line-mask">
               <span className="line-inner block text-[16vw] md:text-[9rem]">Usama</span>
             </span>

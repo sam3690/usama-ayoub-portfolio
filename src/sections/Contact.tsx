@@ -62,7 +62,7 @@ export default function Contact({ reduced }: ContactProps) {
       className="atmosphere relative flex min-h-[100dvh] flex-col justify-center overflow-hidden"
     >
       <div className="mx-auto w-full max-w-[1400px] px-6 py-28 text-center md:px-14">
-        <h2 className="font-serif text-5xl font-semibold leading-[1.02] tracking-tight text-brand-white md:text-8xl">
+        <h2 className="font-heading text-5xl font-semibold leading-[1.02] tracking-tight text-brand-white md:text-8xl">
           <span className="contact-line line-mask">
             <span className="line-inner block">You saw the systems.</span>
           </span>
@@ -83,7 +83,7 @@ export default function Contact({ reduced }: ContactProps) {
           </a>
           <a
             href={`mailto:${email}`}
-            className="font-mono text-sm text-brand-muted transition-colors hover:text-emerald-brand"
+            className="font-heading text-sm text-brand-muted transition-colors hover:text-emerald-brand"
           >
             {email}
           </a>
@@ -107,7 +107,7 @@ export default function Contact({ reduced }: ContactProps) {
       <footer className="border-t border-brand-border/50">
         <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-6 md:px-14">
           <p className="text-xs text-brand-muted">© 2026 Usama Ayoub</p>
-          <p className="font-serif text-sm italic text-brand-muted">Move fast and don't break things.</p>
+          <p className="font-heading text-sm italic text-brand-muted">Move fast and don't break things.</p>
         </div>
       </footer>
     </section>
