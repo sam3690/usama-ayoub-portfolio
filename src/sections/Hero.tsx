@@ -67,10 +67,10 @@ export default function Hero({ reduced }: HeroProps) {
           }
         >
           <h1 className="text-center font-heading font-bold leading-[0.95] tracking-tight text-brand-white">
-            <span className="line-mask">
+            <span className="line-mask-hero">
               <span className="line-inner block text-[16vw] md:text-[9rem]">Usama</span>
             </span>
-            <span className="line-mask">
+            <span className="line-mask-hero">
               <span className="line-inner block text-[16vw] italic text-emerald-brand md:text-[9rem]">
                 Ayoub
               </span>

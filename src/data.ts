@@ -122,6 +122,6 @@ export const experience: ExperienceEntry[] = [
 
 export const email = 'usamabinayoub@gmail.com'
 export const socials = [
-  { name: 'LinkedIn', href: 'https://linkedin.com/in/usama-ayoub' },
-  { name: 'GitHub', href: 'https://github.com/usamaayoub' },
+  { name: 'LinkedIn', href: 'https://www.linkedin.com/in/usama-ayoub-' },
+  { name: 'GitHub', href: 'https://github.com/sam3690' },
 ]

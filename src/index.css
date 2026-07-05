@@ -102,6 +102,13 @@ body {
 .line-mask {
   display: block;
   overflow: hidden;
+  padding-bottom: 0.12em;
+  margin-bottom: -0.12em;
+}
+
+.line-mask-hero {
+  display: block;
+  overflow: hidden;
   padding-bottom: 2.12em;
   margin-bottom: -0.12em;
 }
